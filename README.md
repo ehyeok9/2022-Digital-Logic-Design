@@ -6,7 +6,7 @@
 Minterm이 주어졌을 때, 해당하는 Minterm을 최적화하기 위한 CD, RD, PM을 구현하는 것
 
 ## :clock130: Period
-2022/04/28 (Thursday) ~ 2020/05/29 (Sunday)
+2022/04/28 (Thursday) ~ 2022/05/29 (Sunday)
 
 ## :file_folder: Code Description
 :one: remove_EPI_Minterm.py
