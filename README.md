@@ -47,19 +47,19 @@ Minterm이 주어졌을 때, 해당하는 Minterm을 최적화하기 위한 CD, 
 > 1. **이전 반복**에 의해 **minterm 값**이 **삭제**되지 않아야 한다.
 > 2. **해당하는 minterm**이 가지고 있는 **모든 PI**가 **이전 반복**에 의해 **선택**되지 않아야 한다.
 > 
-> - **최적화된 논리합(=SOP)**를 리턴한다. 
+> - **최적화된 논리합**(=SOP)를 리턴한다. 
 
 ## :clipboard: System Structure
 :repeat: Test.py
 
-:arrow_down: (1) PI 테이블에서 모든 PI를 찾는다.
+:arrow_down: (1) PI 테이블에서 모든 **PI**를 찾는다.
 
-:arrow_down: (2) 테이블에서 EPI를 찾고 제거한다.    
-        :arrow_right: 더이상  NEPI가 없으면 QUIT
+:arrow_down: (2) 테이블에서 **EPI**를 찾고 제거한다.    
+        :arrow_right: 더이상  NEPI가 없으면 **QUIT**
 
-:arrow_down: (3) Column Dominance를 적용한다.
+:arrow_down: (3) **Column Dominance**를 적용한다.
 
-:arrow_down: (4) Row Dominance를 적용한다.
+:arrow_down: (4) **Row Dominance**를 적용한다.
 
 :arrow_down: (5) (2)와 (3)을 통해 어떠한 최적화가 되었다면 **(2)로**, 되지 않았다면 **Petrick method**를 적용한다.
 
