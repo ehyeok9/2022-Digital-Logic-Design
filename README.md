@@ -1,5 +1,5 @@
 # :computer: 2022DATALOGICDESIGN :computer:
-> ### kookmin University 논리 회로 설계 - 도전 과제 
+> ### Kookmin University 논리 회로 설계 - 도전 과제 
 > ### Column Dominance, Row Dominance ,Petrick method
 
 ## :ballot_box_with_check: Project Goal
