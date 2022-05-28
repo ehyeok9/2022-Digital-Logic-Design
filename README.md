@@ -55,7 +55,7 @@ Minterm이 주어졌을 때, 해당하는 Minterm을 최적화하기 위한 CD, 
 :arrow_down: (1) PI 테이블에서 모든 PI를 찾는다.
 
 :arrow_down: (2) 테이블에서 EPI를 찾고 제거한다.  
-            :arrow_right: 더이상  NEPI가 없으면 QUIT
+        :arrow_right: 더이상  NEPI가 없으면 QUIT
 
 :arrow_down: (3) Column Dominance를 적용한다.
 
@@ -80,14 +80,20 @@ Minterm이 주어졌을 때, 해당하는 Minterm을 최적화하기 위한 CD, 
 
 ![title](/img/TEST1-CD.png)
 
+---
+
 :three: Row Dominance : ‘11--’과 ‘1–0’, ‘-11-’과 ‘--10’이 서로를 지배하는 관계(Interchagable)이므로 임의로 제거한다
 
 ![title](/img/RD-TABLE.png)
 
 ![title](/img/TEST1-RD.png)
 
+---
+
 :repeat: Test.py 출력
 ![title](/img/TEST1-TOTALRESULT.png)
+
+---
 
 #### 2번 테스트 케이스 : [4, 13, 0, 2, 3, 4, 5, 6 ,7 ,8, 9, 10, 11, 12, 13]
 
@@ -97,17 +103,23 @@ Minterm이 주어졌을 때, 해당하는 Minterm을 최적화하기 위한 CD, 
 
 ![title](/img/TEST2-CD.png)
 
+---
+
 :two: Row Dominance :  ‘--00’, ‘0–0’, ‘-0-0’이 서로를 지배하는 관계(Interchagable)이다. 임의로 하나의 pi만 남긴다.
 
 ![title](/img/RD-TABLE2.png)
 
 ![title](/img/TEST2-RD.png)
 
+---
+
 :three: Petrick Method  :  minterm 0에 해당하는 pi는 다음 단계에서 찾아야 할 epi 이므로 제외시켜준다. 나머지 minterm들을 통해 최소 논리곱의 합(SOP)를 얻는다.
 
 ![title](/img/PETRCIK-TABLE.png)
 
 ![title](/img/TEST2-P.png)
+
+---
 
 :repeat: Test.py 출력
 ![title](/img/TEST2-TOTALRESULT.png)
