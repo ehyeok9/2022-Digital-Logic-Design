@@ -55,7 +55,7 @@ Minterm이 주어졌을 때, 해당하는 Minterm을 최적화하기 위한 CD, 
 :arrow_down: (1) PI 테이블에서 모든 PI를 찾는다.
 
 :arrow_down: (2) 테이블에서 EPI를 찾고 제거한다.  
-    :arrow_right: 더이상  NEPI가 없으면 QUIT
+            :arrow_right: 더이상  NEPI가 없으면 QUIT
 
 :arrow_down: (3) Column Dominance를 적용한다.
 
@@ -71,6 +71,8 @@ Minterm이 주어졌을 때, 해당하는 Minterm을 최적화하기 위한 CD, 
 :one: Column Dominance를 하기 전, EPI('-0-0', '-1-1')와 EPI에 속해있는 minterm(0,2,8,10 / 5,7,13,15)을 제거해준다.
 
 ![title](/img/TEST1-ARE.png)
+
+---
 
 :two: Column Dominance : 표를 보면 minterm 14가 minterm 6,12를 지배하므로 minterm 14를 제거한다. 
 
