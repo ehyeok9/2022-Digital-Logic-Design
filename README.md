@@ -12,7 +12,7 @@ Minterm이 주어졌을 때, 해당하는 Minterm을 최적화하기 위한 CD, 
 :one: remove_EPI_Minterm.py
 > - Column Dominance를 하기 전, **EPI가 가지고 있는 minterm**들이 NEPI가 가지고 있는 minterm에 속해있다면 **제거**해준다.
 > 
-> - 제거 후 NEPI가 가지고 있는 값이 **빈 리스트**인 경우는 EPI들에게 **지배받는 경우(Row Dominance)**이므로 먼저 제거해준다.
+> - 제거 후 NEPI가 가지고 있는 값이 **빈 리스트**인 경우는 EPI들에게 **지배받는 경우**(Row Dominance)이므로 먼저 제거해준다.
 > 
 >  - EPI의 minterm이 제거 된 **PI 테이블**을 리턴한다.
 
