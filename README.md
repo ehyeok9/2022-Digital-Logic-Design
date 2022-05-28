@@ -92,14 +92,14 @@ Minterm이 주어졌을 때, 해당하는 Minterm을 최적화하기 위한 CD, 
 ![title](/img/TEST2-CD.png){: width="100%" height="100%"){: .center}
 
 :two: Row Dominance :  ‘--00’, ‘0–0’, ‘-0-0’이 서로를 지배하는 관계(Interchagable)이다. 임의로 하나의 pi만 남긴다.
-![title](RD-TABLE2.png){: width="100%" height="100%"){: .center}
+![title](/img/RD-TABLE2.png){: width="100%" height="100%"){: .center}
 
-![title](TEST2-RD.png){: width="100%" height="100%"){: .center}
+![title](/img/TEST2-RD.png){: width="100%" height="100%"){: .center}
 
 :three: Petrick Method  :  minterm 0에 해당하는 pi는 다음 단계에서 찾아야 할 epi 이므로 제외시켜준다. 나머지 minterm들을 통해 최소 논리곱의 합(SOP)를 얻는다.
-![title](PETRCIK-TABLE.png){: width="100%" height="100%"){: .center}
+![title](/img/PETRCIK-TABLE.png){: width="100%" height="100%"){: .center}
 
-![title](TEST2-P.png){: width="100%" height="100%"){: .center}
+![title](/img/TEST2-P.png){: width="100%" height="100%"){: .center}
 
 :repeat: Test.py 출력
-![title](TEST2-TOTALRESULT.png){: width="100%" height="100%"){: .center}
+![title](/img/TEST2-TOTALRESULT.png){: width="100%" height="100%"){: .center}
