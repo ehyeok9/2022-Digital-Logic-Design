@@ -91,6 +91,7 @@ Minterm이 주어졌을 때, 해당하는 Minterm을 최적화하기 위한 CD, 
 ---
 
 :repeat: Test.py 출력
+
 ![title](/img/TEST1-TOTALRESULT.png)
 
 ---
@@ -122,4 +123,5 @@ Minterm이 주어졌을 때, 해당하는 Minterm을 최적화하기 위한 CD, 
 ---
 
 :repeat: Test.py 출력
+
 ![title](/img/TEST2-TOTALRESULT.png)
