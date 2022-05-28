@@ -66,40 +66,46 @@ Minterm이 주어졌을 때, 해당하는 Minterm을 최적화하기 위한 CD, 
 
 ## :page_with_curl: Description of the results
 
-1번 테스트 케이스 : [4, 11, 0, 2, 5, 6, 7, 8, 10, 12, 13, 14, 15]
+#### 1번 테스트 케이스 : [4, 11, 0, 2, 5, 6, 7, 8, 10, 12, 13, 14, 15]
 
 :one: Column Dominance를 하기 전, EPI('-0-0', '-1-1')와 EPI에 속해있는 minterm(0,2,8,10 / 5,7,13,15)을 제거해준다.
-![title](/img/TEST1-ARE.png){: width="100%" height="100%"){: .center}
+
+![title](/img/TEST1-ARE.png)
 
 :two: Column Dominance : 표를 보면 minterm 14가 minterm 6,12를 지배하므로 minterm 14를 제거한다. 
-![title](/img/CD-TABLE.png){: width="100%" height="100%"){: .center}
 
-![title](/img/TEST1-CD.png){: width="100%" height="100%"){: .center}
+![title](/img/CD-TABLE.png)
+
+![title](/img/TEST1-CD.png)
 
 :three: Row Dominance : ‘11--’과 ‘1–0’, ‘-11-’과 ‘--10’이 서로를 지배하는 관계(Interchagable)이므로 임의로 제거한다
-![title](/img/RD-TABLE.png){: width="100%" height="100%"){: .center}
 
-![title](/img/TEST1-RD.png){: width="100%" height="100%"){: .center}
+![title](/img/RD-TABLE.png)
+
+![title](/img/TEST1-RD.png)
 
 :repeat: Test.py 출력
-![title](/img/CD-TABLE.png){: width="100%" height="100%"){: .center}TEST1-TOTALRESULT.png
+![title](TEST1-TOTALRESULT.png)
 
-2번 테스트 케이스 : [4, 13, 0, 2, 3, 4, 5, 6 ,7 ,8, 9, 10, 11, 12, 13]
+#### 2번 테스트 케이스 : [4, 13, 0, 2, 3, 4, 5, 6 ,7 ,8, 9, 10, 11, 12, 13]
 
 :one: Column Dominance : 2 → 3, 4 → 5, 6 →7, 8→ 9, 10 → 11, 12 → 13 이렇게 지배하는 - 지배당하는 구조가 형성된다. 지배하는 [ 2, 4, 6, 8, 10, 12 ] minterm을 제거한다.
-![title](/img/CD-TABLE2.png){: width="100%" height="100%"){: .center}
 
-![title](/img/TEST2-CD.png){: width="100%" height="100%"){: .center}
+![title](/img/CD-TABLE2.png)
+
+![title](/img/TEST2-CD.png)
 
 :two: Row Dominance :  ‘--00’, ‘0–0’, ‘-0-0’이 서로를 지배하는 관계(Interchagable)이다. 임의로 하나의 pi만 남긴다.
-![title](/img/RD-TABLE2.png){: width="100%" height="100%"){: .center}
 
-![title](/img/TEST2-RD.png){: width="100%" height="100%"){: .center}
+![title](/img/RD-TABLE2.png)
+
+![title](/img/TEST2-RD.png)
 
 :three: Petrick Method  :  minterm 0에 해당하는 pi는 다음 단계에서 찾아야 할 epi 이므로 제외시켜준다. 나머지 minterm들을 통해 최소 논리곱의 합(SOP)를 얻는다.
-![title](/img/PETRCIK-TABLE.png){: width="100%" height="100%"){: .center}
 
-![title](/img/TEST2-P.png){: width="100%" height="100%"){: .center}
+![title](/img/PETRCIK-TABLE.png)
+
+![title](/img/TEST2-P.png)
 
 :repeat: Test.py 출력
-![title](/img/TEST2-TOTALRESULT.png){: width="100%" height="100%"){: .center}
+![title](/img/TEST2-TOTALRESULT.png)
