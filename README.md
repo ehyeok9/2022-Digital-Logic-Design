@@ -1,6 +1,6 @@
 # :computer: 2022DATALOGICDESIGN :computer:
 > ### Kookmin University 논리 회로 설계 - 도전 과제 
-> ### Column Dominance, Row Dominance ,Petrick method
+> ### Find PI, Find EPI, Column Dominance, Row Dominance ,Petrick method
 
 ## :ballot_box_with_check: Project Goal
 Minterm이 주어졌을 때, 해당하는 Minterm을 최적화하기 위한 CD, RD, PM을 구현하는 것
