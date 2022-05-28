@@ -85,7 +85,7 @@ Minterm이 주어졌을 때, 해당하는 Minterm을 최적화하기 위한 CD, 
 ![title](/img/TEST1-RD.png)
 
 :repeat: Test.py 출력
-![title](TEST1-TOTALRESULT.png)
+![title](/img/TEST1-TOTALRESULT.png)
 
 #### 2번 테스트 케이스 : [4, 13, 0, 2, 3, 4, 5, 6 ,7 ,8, 9, 10, 11, 12, 13]
 
